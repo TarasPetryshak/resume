@@ -12,3 +12,6 @@ body.addEventListener('click', (e) => {
         changeSection.style.borderRadius = 'none';
     }
 })
+
+const buttonPrint = document.querySelector('.menu__link_print');
+buttonPrint.addEventListener('click', () => window.print());
