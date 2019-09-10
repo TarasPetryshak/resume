@@ -162,6 +162,11 @@
     font-size: 1.2rem;
 }
 
+.fa-skype {
+    font-size: 1.2rem;
+    margin-right: 0.7rem;
+}
+
 .contact-info__item:last-child::before {
     content: "\2751";
     margin-right: 0.5rem;
@@ -229,7 +234,7 @@
 .aside {
     width: 28%;
     margin-left: 5%;
-    margin-top: -11rem;
+    margin-top: -16rem;
 }
 
 .skill__level {
@@ -476,11 +481,11 @@
     }
     .about-me-section__article {
         width: 48%;
-        margin: 3% 0 0 0;
+        margin: 10% 0 0 0;
         padding: 0;
     }
     .contact-info {
-        margin-top: -50%;
+        margin-top: -45%;
         margin-left: 51%;
     }
     .contact-info__item {
@@ -493,7 +498,7 @@
     }
     .experience-section {
         width: 65%;
-        margin-top: 13rem;
+        margin-top: 10rem;
     }
     .experience-section__header {
         margin-top: 0.3rem;
@@ -525,8 +530,8 @@
     }
     .aside {
         position: absolute;
-        top: 11rem;
-        right: 0.5rem;
+        top: 17rem;
+        right: 0.1rem;
     }
     .aside__header {
         margin: 1rem 0;
