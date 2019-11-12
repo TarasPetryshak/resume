@@ -23,13 +23,6 @@ body {
     font-size: 16px;
 }
 
-
-/* .container {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0;
-} */
-
 .header {
     width: 100%;
     height: 100px;
@@ -284,7 +277,6 @@ main {
 
 .background-container-1 {
     width: 100%;
-    /* height: 430px; */
     background-image: url(../images/Top-6-Software-Development-Methodologies.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -292,26 +284,7 @@ main {
     margin: 0;
     padding: 0;
     position: relative;
-    /* background: rgba(255, 255, 255, 0.7); */
 }
-
-
-/*
-#slider-1 {
-    width: 100%;
-    height: 430px;
-    z-index: -2;
-    position: absolute;
-    top: 40px;
-    left:0;
-}
-#slider-1 .owl-stage-outer {
-    height: 430px;
-}
-#slider-1 .owl-stage-outer .owl-item img {
-    width: 100%;
-    height: 430px;
-} */
 
 .about {
     width: 100%;
@@ -601,7 +574,6 @@ main {
 }
 
 .education__block:last-child {
-    /* overflow: hidden; */
     justify-content: center;
     align-items: center;
     background: #f6f6f6;
@@ -675,7 +647,8 @@ main {
 }
 
 .certificates.owl-carousel img {
-    width: 90%;
+    width: 70%;
+    height: 450px;
     margin: 0 auto;
 }
 
@@ -720,13 +693,7 @@ div.owl-dots {
     box-sizing: border-box;
     background: #f1f1f1;
     border-top: 8px solid #666;
-    /* transition: all .3s; */
 }
-
-
-/* div.experience__block:first-of-type {
-    margin-right: 40px;
-} */
 
 .experience__block h3 {
     margin-bottom: 10px;
@@ -866,11 +833,13 @@ div.owl-dots {
 footer {
     width: 100%;
     height: 100px;
+    margin-top: -10px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background: #f1f1f1;
 }
+
 footer p {
     width: 35%;
     height: 50%;
@@ -881,7 +850,48 @@ footer p {
     font-family: 'Raleway', sans-serif;
     color: #333;
     font-size: 0.9rem;
-    /* font-weight: 900; */
     letter-spacing: 0.02rem;
     transition: all 1.2s;
+}
+
+#scroll-button {
+    width: 45px;
+    height: 45px;
+    background: rgba(117, 106, 238, .3);
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    position: fixed;
+    bottom: 150px;
+    right: 45px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    ;
+    opacity: 1;
+}
+
+#scroll-button i {
+    font-size: 1.5rem;
+}
+
+#scroll-button:hover {
+    cursor: pointer;
+}
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
