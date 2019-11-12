@@ -5,9 +5,10 @@ $(document).ready(function() {
         dots: true,
         loop: true,
         items: 1,
+        margin: 10,
         autoplay: true,
-        smartSpeed: 2000,
-        autoplayTimeout: 8000,
+        smartSpeed: 1000,
+        autoplayTimeout: 4000,
     })
 });
 
