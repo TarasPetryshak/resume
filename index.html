@@ -1,156 +1,273 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/7c49264536.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Taras Petryshak</title>
+    <link rel="stylesheet" href="css/media.css">
+    <title>Taras Petryshak - Resume</title>
 </head>
 
 <body>
+    <!-- <div class="container"> -->
     <header class="header">
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu__item"><a href="#" class="menu__link menu__link_no-hover"><i
-                            class="far fa-compass"></i></a></li>
-                <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-                <li class="menu__item"><a href="" class="menu__link menu__link_print">My Resume</a></li>
-                <li class="menu__item"><a href="https://github.com/TarasPetryshak/portfolio" target="_blank" class="menu__link">Portfolio</a></li>
-                <li class="menu__item"><a href="#contact" class="menu__link contact-btn">Contact</a></li>
+        <h1 class="header__head">Taras Petryshak</h1>
+        <nav class="header__menu">
+            <input type="checkbox" class="header__menu_button">
+            <i class="fas fa-bars header__menu_icon"></i>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#">Portfolio
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <input type="checkbox" class="header__submenu_button">
+                    <ul class="header__submenu">
+                        <li class="header__submenu_item visualize"><a href="#">Visualization
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                                <i class="fas fa-chevron-down down-arrow"></i>
+                            </a>
+                            <input type="checkbox" class="header__dropmenu_button-first">
+                            <ul class="header__dropmenu menu-visualize">
+                                <li class="header__dropmenu_item">
+                                    <a href="">MazelOne mockup</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Calculator bootstrap/js/jQuery</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Afrodyta template</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Timeline template</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__submenu_item code"><a href="#">Code
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                                <i class="fas fa-chevron-down down-arrow"></i>
+                            </a>
+                            <input type="checkbox" class="header__dropmenu_button-second">
+                            <ul class="header__dropmenu menu-code">
+                                <li class="header__dropmenu_item">
+                                    <a href="">MazelOne mockup</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Calculator bootstrap/js/jQuery</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Afrodyta template</a>
+                                </li>
+                                <li class="header__dropmenu_item">
+                                    <a href="">Timeline template</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="header__item"><a href="#" id="contacts">Contacts</a></li>
+                <li class="header__item"><a href="#skills">Skills</a></li>
+                <li class="header__item"><a href="#education">Education</a></li>
+                <li class="header__item"><a href="#feedback">Write me</a></li>
+                <li class="header__item"><a href="#">Print resume</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-content" id="about">
-        <section class="about-me-section">
-            <h2 class="about-me-section__header about-me-section__header_position-center">Front-End Developer<br> Taras Petryshak</h2>
-            <img src="images/photo.jpg" alt="photo" class="about-me-section__photo">
-            <article class="about-me-section__article about-me-section__article_print-position">
-                <h2 class="about-me-section__header">About</h2>
-                <p class="about-me-section__text about-me-section__text_bolder">A few lines about me</p>
-                <p class="about-me-section__text">Ambitious Junior software engineer.</br>
-                    * Proactive and enthusiastic about tacking problems and have analytical approach to tasks.</br>
-                    * Thorough and prompt in my work.</br>
-                    * Have a knack for developing UI using HTML, CSS, JavaScript.</br>
-                    * Have true desire to collaborate with like-minded, creative colleagues every single day.
-                </p>
-                <div class="about-me-section-links">
-                    <div class="about-me-section__item"><a href="https://github.com/TarasPetryshak/portfolio" target="_blank" class="about-me-section__link">portfolio</a></div>
-                    <div class="about-me-section__item"><a href="#about" class="about-me-section__link contact-btn">contact me</a></div>
+    <main>
+        <div class="background-container-1">
+            <!-- <div class="owl-carousel" id="slider-1">
+                    <div class="item"><img src="images/slider-1/sl1.jpg" alt="photo"></div>
+                    <div class="item"><img src="images/slider-1/sl2.jpg" alt="photo"></div>
+                    <div class="item"><img src="images/slider-1/sl3.jpg" alt="photo"></div>
+                    <div class="item"><img src="images/slider-1/sl4.jpg" alt="photo"></div>
+                </div> -->
+            <section class="about">
+                <div class="about__block">
+                    <img src="images/photo.jpg" alt="photo">
                 </div>
-            </article>
-            <article class="about-me-section__article contact-info">
-                <h4 class="contact-info__header">Contact Me</h4>
-                <ul class="contact-info__content">
-                    <li class="contact-info__item"><a href="mailto:petryshak.taras@gmail.com" target="_blank" class="contact-info__link">petryshak.taras@gmail.com</a>
-                    </li>
-                    <li class="contact-info__item">097-492-10-43</li>
-                    <li class="contact-info__item"><a href="skype:petryshak.taras?chat" class="contact-info__link"><i class="fab fa-skype"></i>petryshak.taras</a></li>
-                    <li class="contact-info__item"><a href="https://github.com/TarasPetryshak" target="_blank" class="contact-info__link">https://github.com/TarasPetryshak</a></li>
-
-                </ul>
-            </article>
-        </section>
-        <div class="line"></div>
-        <div class="wrapper">
-            <section class="experience-section">
-                <h3 class="experience-section__header experience-section__header_red">Education</h3>
-                <article class="experience-block">
-                    <h4 class="experience-block__header">SkillUp learning center</h4>
-                    <p class="experience-block__years">May 2019 - Aug 2019</p>
-                    <p class="experience-block__text experience-block__text_bigger">Direction: Front-end</p>
-                    <p class="experience-block__text"> Technology learned: HTML/CSS/Bootstrap/SASS/JavaScript/JQUERY. I did small projects during the studying. You can found my works at the link <span>https://github.com/TarasPetryshak</span>
-                        <a href="https://github.com/TarasPetryshak" target="_blank">My works.</a></p>
-                </article>
-                <article class="experience-block">
-                    <h4 class="experience-block__header">Technical college Lviv Polytechnic national University</h4>
-                    <p class="experience-block__years">2002-2006</p>
-                    <p class="experience-block__text experience-block__text_bigger">Radio electronics faculty</p>
-                    <p class="experience-block__text">Junior specialist. Specialty: Design, production and service of radio electronics devices. Honors diploma.</p>
-                </article>
-                <div class="line-article"></div>
-                <h3 class="experience-section__header experience-section__header_red">Experience</h3>
-                <article class="experience-block">
-                    <h4 class="experience-block__header">Own business(retail shop)</h4>
-                    <p class="experience-block__years">Aug 2018-Jul 2019</p>
-                    <p class="experience-block__text experience-block__text_bigger">Clothing shop</p>
-                    <p class="experience-block__text">Own shop of sports wear and shoes "4Sports" in Vinnytsia. Closed shop because little traffic there.
-                    </p>
-                </article>
-                <article class="experience-block">
-                    <h4 class="experience-block__header">Adidas-Group Ukraine</h4>
-                    <p class="experience-block__years">2008-2018</p>
-                    <p class="experience-block__text experience-block__text_bigger">Shop administrator</p>
-                    <p class="experience-block__text">While working at the company, I held various positions. The last position as a store administrator envisaged: participation in staff recruitment, staff training and motivation, analysis of store performance indicators and actions aimed
-                        at improving them.</p>
-                </article>
+                <div class="about__block">
+                    <h2 class="about__block_header">About</h2>
+                    <div class="about__block_text-wrapper">
+                        <p class="about__block_text-bolder">A few lines about me</p>
+                        <p class="about__block_text">
+                            * Ambitious Junior software engineer.<br>
+                            * Proactive and enthusiastic about tacking problems and have analytical approach to
+                            tasks.<br>
+                            * Thorough and prompt in my work.<br>
+                            * Have a knack for developing UI using HTML, CSS, JavaScript.<br>
+                            * Have true desire to collaborate with like-minded, creative colleagues every single
+                            day.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__block" id="contacts-block">
+                    <h3 class="about__block_header-thin">Contacts</h3>
+                    <ul class="about__block_list">
+                        <li class="about__block_item"><a href="mailto:petryshak.taras@gmail.com" target="_blank"
+                                class="about__block_link">
+                                <i class="far fa-envelope"></i>
+                                petryshak.taras@gmail.com</a>
+                        </li>
+                        <li class="about__block_item"><a href="tel:+380974921043" class="about__block_link">
+                                <i class="fas fa-mobile-alt"></i>
+                                097-492-10-43</a></li>
+                        <li class="about__block_item"><a href="skype:petryshak.taras?chat" class="about__block_link"><i
+                                    class="fab fa-skype" aria-hidden="true"></i>petryshak.taras</a></li>
+                        <li class="about__block_item"><a href="https://github.com/TarasPetryshak" target="_blank"
+                                class="about__block_link">
+                                <i class="fab fa-github"></i>
+                                https://github.com/TarasPetryshak</a></li>
+                    </ul>
+                </div>
             </section>
-            <aside class="aside" id="skills">
-                <h4 class="aside__header">Skills</h4>
-                <div class="skill">
-                    <h4 class="skill__header">HTML</h4>
-                    <div class="skill__level stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+            <section class="skills" id="skills">
+                <h2 class="skills__header">Skills</h2>
+                <div class="skills__block">
+                    <h4>HTML</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">HTML5</p>
+                    <p>HTML 5</p>
                 </div>
-                <div class="skill">
-                    <h4 class="skill__header">CSS</h4>
-                    <div class="skill__level stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="skills__block">
+                    <h4>CSS</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">CSS3</p>
+                    <p>CSS3</p>
                 </div>
-                <div class="skill">
-                    <h4 class="skill__header">SCSS</h4>
-                    <div class="skill__level sk stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="skills__block">
+                    <h4>SCSS</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">SASS</p>
+                    <p>SASS</p>
                 </div>
-                <div class="skill">
-                    <h4 class="skill__header">Bootstrap</h4>
-                    <div class="skill__level stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="skills__block">
+                    <h4>BOOTSTRAP</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">Bootstrap4</p>
+                    <p>Bootstrap 4</p>
                 </div>
-                <div class="skill">
-                    <h4 class="skill__header">JavaScript</h4>
-                    <div class="skill__level stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="skills__block">
+                    <h4>JAVASCRIPT</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">ES6</p>
+                    <p>ES6</p>
                 </div>
-                <div class="skill">
-                    <h4 class="skill__header">English level</h4>
-                    <div class="skill__level stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="skills__block">
+                    <h4>ENGLISH LEVEL</h4>
+                    <div class="stars">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
-                    <p class="skill__text">A2</p>
+                    <p>A2</p>
                 </div>
-            </aside>
+            </section>
+            <section class="education" id="education">
+                <h2 class="education__header">Education</h2>
+                <div class="education__block">
+                    <h3>NIKOS-LTV</h3>
+                    <h4>Web Development</h4>
+                    <h4>Oct 2019</h4>
+                    <p>Technology learned: HTML/CSS/JavaScript/
+                        JQUERY. I did small projects during the studying.
+                        You can found my works at the link:
+                        <a href="https://github.com/TarasPetryshak" target="_blank" title="Here is link to GitHub">My
+                            works</a>.</p>
+                </div>
+                <div class="education__block">
+                    <h3>SkillUp learning center</h3>
+                    <h4>Direction: Front-end</h4>
+                    <h4>May 2019 - Aug 2019</h4>
+                    <p>Technology learned: HTML/CSS/Bootstrap/SASS/JavaScript/
+                        JQUERY. I did small projects during the studying.
+                        You can found my works at the link:
+                        <a href="https://github.com/TarasPetryshak" target="_blank" title="Here is link to GitHub">My
+                            works</a>.
+                    </p>
+                </div>
+                <div class="education__block">
+                    <h3>Technical college Lviv Polytechnic national University</h3>
+                    <h4>Radio electronics faculty</h4>
+                    <h4>2002-2006</h4>
+                    <p>Junior specialist. Specialty: Design, production and service of radio
+                        electronics devices. Honors diploma.</p>
+                </div>
+                <div class="education__block">
+                    <img src="images/education2.jpg" alt="image">
+                </div>
+            </section>
         </div>
+        <section class="certificates owl-carousel">
+            <div class="certificates__image item">
+                <img src="images/education.jpg" alt="photo">
+            </div>
+            <div class="certificates__image item">
+                <img src="images/education.jpg" alt="photo">
+            </div>
+        </section>
+        <section class="experience">
+            <h2 class="experience__header">Experience</h2>
+            <div class="experience__block">
+                <h3>Own business(retail shop)</h3>
+                <h4>Clothing shop</h4>
+                <h4>Aug 2018-Jul 2019</h4>
+                <p>Own shop of sports wear and shoes "4Sports" in Vinnytsia.
+                    Closed shop because little traffic was there.</p>
+            </div>
+            <div class="experience__block">
+                <h3>Adidas-Group Ukraine</h3>
+                <h4>Shop administrator</h4>
+                <h4>2008-2018</h4>
+                <p>While working at the company, I held various positions. The last position as a store administrator
+                    envisaged: participation in staff recruitment, staff training and motivation, analysis
+                    of store performance indicators and actions aimed at improving them.</p>
+            </div>
+        </section>
+        <section class="feedback">
+            <form action="https://formspree.io/mdooedwn" method="POST" id="feedback">
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="organization">Enter your organization</label>
+                <input type="text" name="organization" id="organization" placeholder="Organization">
+                <label for="massage">Enter your message</label>
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
+                <input type="submit" value="send">
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>Taras Petryshak</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
