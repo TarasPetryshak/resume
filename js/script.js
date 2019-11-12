@@ -58,3 +58,4 @@ scrollButton.click(() => {
       $('.preloader').fadeOut(500);
         $('.preloader').fadeOut(500);
     }) */
+$('#print').click(() => window.print());
