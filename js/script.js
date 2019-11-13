@@ -50,13 +50,13 @@ let visibleScrollButton = () => {
 }
 $(window).scroll(visibleScrollButton);
 scrollButton.click(() => {
-        $('html').animate({
-            scrollTop: 0
-        }, 300)
-    })
-    /*
-    $(window).load(function() {
-      $('.preloader').fadeOut(500);
-        $('.preloader').fadeOut(500);
-    }) */
+    $('html').animate({
+        scrollTop: 0
+    }, 300)
+})
+
+$(window).on('load', function() {
+    $('#loader').fadeOut(800);
+    $('#preloader').delay(800).fadeOut(500);
+});
 $('#print').click(() => window.print());

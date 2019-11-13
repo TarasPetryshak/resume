@@ -1,3 +1,21 @@
+#preloader {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#loader {
+    width: 200px;
+    height: 150px;
+}
 h1,
 h2,
 h3,
@@ -314,14 +332,12 @@ main {
     width: 100%;
     height: 350px;
     object-fit: contain;
-    filter: grayscale(0);
     transition: all .3s;
 }
 
 .about__block img:hover {
-    filter: grayscale(100);
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .about__block_text-wrapper {
@@ -883,15 +899,4 @@ footer p {
     cursor: pointer;
 }
 
-.preloader {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+
